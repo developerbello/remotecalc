@@ -18,10 +18,10 @@
   
       <div class="calc-keys">
         <div class="first-keys">
-          <button type="button" class="minus">-</button>
-          <button type="button" class="plus">+</button>
-          <button type="button" class="multiply">x</button>
-          <button type="button" class="divide">/</button>
+          <button type="button" class="minus active-mode" data-action="add" data-previous-key-type="operator">-</button>
+          <button type="button" class="plus active-mode" data-action="subtract" data-previous-key-type="operator">+</button>
+          <button type="button" class="active-mode" multiply data-action="multiply" data-previous-key-type="operator">&times;</button>
+          <button type="button" class="divide active-mode" data-action="divide" data-previous-key-type="operator">÷</button>
         </div>
   
         <div class="other-keys">
@@ -46,14 +46,14 @@
   
             <div class="fifth-keys">
               <button type="button" class="">0</button>
-              <button type="button" class="">.</button>
-              <button type="button" class="ac">C</button>
+              <button type="button" class="" data-action="decimal">.</button>
+              <button type="button" class="ac" data-action="clear">C</button>
             </div>
   
           </div>
           
           <div class="equal">
-            <button type="button" class="equal-to">=</button>
+            <button type="button" class="equal-to" data-action="calculate">=</button>
           </div>
          
         </div>
@@ -61,8 +61,11 @@
 
     </div>
 
-      
+    
     </div>
   </div>
+
+  <script src="./js/index.js"></script>
 </body>
+
 </html>
